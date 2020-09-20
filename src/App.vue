@@ -12,6 +12,16 @@ export default {
   components: {
     Board,
   },
+  data() {
+    return {
+      gameOn: false,
+    };
+  },
+  methods: {
+    startGame() {
+      this.gameOn = true;
+    },
+  },
 };
 </script>
 

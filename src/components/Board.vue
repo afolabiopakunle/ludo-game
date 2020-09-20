@@ -2,12 +2,14 @@
   <div id="board">
     <div>
       <Box />
+      <Box />
     </div>
   </div>
 </template>
 
 <script>
 import Box from "./Box";
+
 export default {
   name: "Board",
   components: {

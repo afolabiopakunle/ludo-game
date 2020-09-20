@@ -1,7 +1,5 @@
 <template>
-  <div id="board">
-    <div id="box"></div>
-  </div>
+  <div id="box"></div>
 </template>
 
 <script>
@@ -16,5 +14,6 @@ export default {
   width: 40px;
   height: 40px;
   background-color: yellow;
+  border: 1px solid black;
 }
 </style>
