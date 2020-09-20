@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Board />
+    <button @click="startGame" v-if="!gameOn">Start Game</button>
+    <Board v-if="gameOn" :num="num" />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
   data() {
     return {
       gameOn: false,
+      num: true,
     };
   },
   methods: {

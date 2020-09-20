@@ -1,11 +1,21 @@
 <template>
-  <div id="box"></div>
+  <div id="box">
+    <Dot />
+  </div>
 </template>
 
 <script>
+import Dot from "./Dot";
 export default {
   name: "Box",
-  components: {},
+  data() {
+    return {
+      num: true,
+    };
+  },
+  components: {
+    Dot,
+  },
 };
 </script>
 
@@ -15,5 +25,8 @@ export default {
   height: 40px;
   background-color: yellow;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

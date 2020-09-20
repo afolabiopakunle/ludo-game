@@ -1,8 +1,7 @@
 <template>
   <div id="board">
     <div>
-      <Box />
-      <Box />
+      <Box v-for="box in boxes" :key="box" :class="{brown: box % 3}"></Box>
     </div>
   </div>
 </template>
@@ -15,13 +14,21 @@ export default {
   components: {
     Box,
   },
+  data() {
+    return {
+      boxes: 57,
+    };
+  },
 };
 </script>
 
 <style scoped>
 #board {
-  width: 400px;
-  height: 400px;
+  /* width: 400px;
+  height: 400px; */
   background-color: lightblue;
+}
+.brown {
+  border-color: brown;
 }
 </style>
